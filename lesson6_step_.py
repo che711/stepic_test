@@ -6,11 +6,11 @@ try:
     browser = webdriver.Chrome('/home/andrew/Рабочий стол/Andrei_Che/stepic_test/chromedriver')
     browser.get(link)
 
-    input1 = browser.find_element_by_xpath('/html/body/div/form/div[1]/div[1]/input')
+    input1 = browser.find_element_by_xpath('input[placeholder="Input your first name"")
     input1.send_keys("Ivan")
-    input2 = browser.find_element_by_xpath('/html/body/div/form/div[1]/div[2]/input')
+    input2 = browser.find_element_by_xpath("input[placeholder='Input your last name']")
     input2.send_keys("Petrov")
-    input3 = browser.find_element_by_xpath("/html/body/div/form/div[1]/div[3]/input")
+    input3 = browser.find_element_by_xpath("input[placeholder='Input your email']")
     input3.send_keys("Smolensk")
 
     # Отправляем заполненную формупшу
