@@ -3,11 +3,15 @@ import time
 
 try:
     link = "http://suninjuly.github.io/registration1.html"
-    browser = webdriver.Chrome()
+    browser = webdriver.Chrome('/home/andrew/Рабочий стол/Andrei_Che/stepic_test/chromedriver')
     browser.get(link)
 
-    # Ваш код, который заполняет обязательные поля
-    ...
+    input1 = browser.find_element_by_xpath('/html/body/div/form/div[1]/div[1]/input')
+    input1.send_keys("Ivan")
+    input2 = browser.find_element_by_xpath('/html/body/div/form/div[1]/div[2]/input')
+    input2.send_keys("Petrov")
+    input3 = browser.find_element_by_xpath("/html/body/div/form/div[1]/div[3]/input")
+    input3.send_keys("Smolensk")
 
     # Отправляем заполненную формупшу
     button = browser.find_element_by_css_selector("button.btn")
@@ -27,9 +31,8 @@ try:
 
 finally:
     # ожидание чтобы визуально оценить результаты прохождения скрипта
-    time.sleep(10)
+    time.sleep(3)
     # закрываем браузер после всех манипуляций
     browser.quit()
 
 
-#22.30544480938715
