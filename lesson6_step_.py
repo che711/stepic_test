@@ -9,7 +9,7 @@ try:
     # Ваш код, который заполняет обязательные поля
     ...
 
-    # Отправляем заполненную форму
+    # Отправляем заполненную формупшу
     button = browser.find_element_by_css_selector("button.btn")
     button.click()
 
