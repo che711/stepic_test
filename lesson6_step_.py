@@ -6,7 +6,7 @@ try:
     browser = webdriver.Chrome('/home/andrew/Рабочий стол/Andrei_Che/stepic_test/chromedriver')
     browser.get(link)
 
-    input1 = browser.find_element_by_xpath('input[placeholder="Input your first name"")
+    input1 = browser.find_element_by_xpath('input[placeholder="Input your first name')
     input1.send_keys("Ivan")
     input2 = browser.find_element_by_xpath("input[placeholder='Input your last name']")
     input2.send_keys("Petrov")
