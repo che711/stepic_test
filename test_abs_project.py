@@ -1,7 +1,7 @@
 import unittest
 import pytest
 
-class TestAbs(unittest.TestCase):
+class TestAbs():
     def test_abs1(self):
         self.assertEqual(abs(-42), 42, "Should be absolute value of a number")
         
@@ -9,6 +9,5 @@ class TestAbs(unittest.TestCase):
         self.assertEqual(abs(-42), -42, "Should be absolute value of a number")
         
 if __name__ == "__main__":
-
-    unittest.main()
+    #unittest.main()
     pytest.main()

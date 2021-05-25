@@ -1,9 +1,8 @@
 from selenium import webdriver
 import time
-import unittest
 import pytest
 
-def test_reg_1():
+def test_site1():
     link = "http://suninjuly.github.io/registration1.html"
     browser = webdriver.Chrome('/home/andrew/Рабочий стол/Andrei_Che/stepic_test/chromedriver')
     browser.get(link)
@@ -19,11 +18,10 @@ def test_reg_1():
     welcome_text_elt = browser.find_element_by_tag_name("h1")
     welcome_text = welcome_text_elt.text
     assert "Congratulations! You have successfully registered!" == welcome_text
-    time.sleep(5)
+    time.sleep(3)
     browser.quit()
 
-
-def test_reg_2():
+def test_site2():
     link = "http://suninjuly.github.io/registration2.html"
     browser = webdriver.Chrome('/home/andrew/Рабочий стол/Andrei_Che/stepic_test/chromedriver')
     browser.get(link)
@@ -39,13 +37,8 @@ def test_reg_2():
     welcome_text_elt = browser.find_element_by_tag_name("h1")
     welcome_text = welcome_text_elt.text
     assert "Congratulations! You have successfully registered!" == welcome_text
-    time.sleep(5)
+    time.sleep(3)
     browser.quit()
 
-
-
-
 if __name__ == "__main__":
-    unittest.main()
-
-# не забываем оставить пустую строку в конце файла
+    pytest.main()
