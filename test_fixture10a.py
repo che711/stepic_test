@@ -1,7 +1,8 @@
 import pytest
 from selenium import webdriver
 
-# pytest -rx -v test_fixture10a.py -
+# pytest -rx -v test_fixture10a.py
+
 
 link = "http://selenium1py.pythonanywhere.com/"
 
