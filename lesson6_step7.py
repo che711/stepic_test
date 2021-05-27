@@ -5,7 +5,7 @@ import time
 link = " http://suninjuly.github.io/find_xpath_form"
 
 try:
-    browser = webdriver.Chrome('/home/andrew/Рабочий стол/Andrei_Che/stepic_test/chromedriver')
+    browser = webdriver.Chrome()
     browser.get(link)
 
     input1 = browser.find_element_by_tag_name('input')
