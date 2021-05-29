@@ -4,7 +4,7 @@ import time
 import math
 
 link = "http://suninjuly.github.io/selects2.html"
-browser = webdriver.Chrome('/home/andrew/Рабочий стол/Andrei_Che/stepic_test/chromedriver')
+browser = webdriver.Chrome()
 browser.get(link)
 elem1 = browser.find_element_by_id('num1')
 elem2 = browser.find_element_by_id('num2')
