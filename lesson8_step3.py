@@ -20,7 +20,7 @@ select.select_by_value(x)
 
 button3 = browser.find_element_by_xpath("/html/body/div/form/button")
 button3.click()
-time.sleep(10)
+time.sleep(5)
 browser.quit()
 
 

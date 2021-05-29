@@ -4,7 +4,7 @@ import pytest
 
 def test_site1():
     link = "http://suninjuly.github.io/registration1.html"
-    browser = webdriver.Chrome('/home/andrew/Рабочий стол/Andrei_Che/stepic_test/chromedriver')
+    browser = webdriver.Chrome()
     browser.get(link)
     input1 = browser.find_element_by_xpath('/html/body/div/form/div[1]/div[1]/input')
     input1.send_keys("Ivan")

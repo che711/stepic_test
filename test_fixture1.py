@@ -6,7 +6,7 @@ class TestMainPage1():
     @classmethod
     def setup_class(self):
         print("\nstart browser for test suite..1")
-        self.browser = webdriver.Chrome('/home/andrew/Рабочий стол/Andrei_Che/stepic_test/chromedriver')
+        self.browser = webdriver.Chrome()
     @classmethod
     def teardown_class(self):
         print("quit browser for test suite..1")

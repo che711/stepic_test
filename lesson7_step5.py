@@ -7,7 +7,7 @@ def calc(x):
 
 try:
     link = "http://suninjuly.github.io/math.html"
-    browser = webdriver.Chrome('/home/andrew/Рабочий стол/Andrei_Che/stepic_test/chromedriver')
+    browser = webdriver.Chrome()
     browser.get(link)
     x_element = browser.find_element_by_id('input_value')
     x = x_element.text

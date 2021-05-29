@@ -7,7 +7,7 @@ def calc(x):
   return str(math.log(abs(12*math.sin(int(x)))))
 
 link = "http://SunInJuly.github.io/execute_script.html"
-browser = webdriver.Chrome('/home/andrew/Рабочий стол/Andrei_Che/stepic_test/chromedriver')
+browser = webdriver.Chrome()
 browser.maximize_window()
 browser.get(link)
 elem1 = browser.find_element_by_id('input_value')

@@ -4,7 +4,7 @@ import time
 
 link = "http://suninjuly.github.io/find_link_text"
 
-browser = webdriver.Chrome('/home/andrew/Рабочий стол/Andrei_Che/stepic_test/chromedriver')
+browser = webdriver.Chrome()
 browser.maximize_window()
 browser.get (link)
 browser.find_element_by_partial_link_text(str(math.ceil(math.pow(math.pi, math.e)*10000))).click()

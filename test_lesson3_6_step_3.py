@@ -9,7 +9,7 @@ locator = '/html/body/div[1]/div[2]/main/div[1]/div[2]/div/div[2]/div[1]/div/art
 @pytest.fixture(scope="function")
 def browser():
     #print("\nstart browser for test..")
-    browser = webdriver.Chrome('/home/andrew/Рабочий стол/Andrei_Che/stepic_test/chromedriver')
+    browser = webdriver.Chrome()
     yield browser
     #print("\nquit browser..")
     browser.quit()

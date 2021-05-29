@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 
 try:
-    browser = webdriver.Chrome('/home/andrew/Рабочий стол/Andrei_Che/stepic_test/chromedriver')
+    browser = webdriver.Chrome()
     browser.get("http://suninjuly.github.io/huge_form.html")
     elements = browser.find_elements_by_css_selector ("input[type=text]")
     for element in elements:
